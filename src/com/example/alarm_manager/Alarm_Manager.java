@@ -13,6 +13,10 @@ public class Alarm_Manager extends Activity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		
+		
+		
 		setContentView(R.layout.activity_alarm__manager);
 		 // get a Calendar object with current time
 		 Calendar cal = Calendar.getInstance();
