@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/person_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/person_birthday"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/person_name"
+        android:layout_margin="10dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <CheckBox
+        android:id="@+id/call_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/person_birthday"
+        android:text="Do you want to call" />
+
+    <EditText
+        android:id="@+id/call_no"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/person_birthday"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/call_check"
+        android:hint="phone no"
+        android:inputType="phone"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/sms_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/call_check"
+        android:text="Do you want to send sms" />
+
+    <EditText
+        android:id="@+id/sms_no"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/call_check"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@+id/sms_check"
+        android:hint="phone no"
+        android:inputType="phone"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/fb_check"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sms_check"
+        android:text="Do you want to post on fb" />
+
+    <Button
+        android:id="@+id/submit_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fb_check"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Submit" />
+
+</RelativeLayout>
