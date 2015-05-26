@@ -17,6 +17,10 @@ public class Alarm_Manager extends Activity {
 		
 		
 		
+		
+		
+		
+		
 		setContentView(R.layout.activity_alarm__manager);
 		 // get a Calendar object with current time
 		 Calendar cal = Calendar.getInstance();
