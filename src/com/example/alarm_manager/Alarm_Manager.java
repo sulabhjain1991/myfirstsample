@@ -20,6 +20,7 @@ public class Alarm_Manager extends Activity {
 		setContentView(R.layout.activity_alarm__manager);
 		 // get a Calendar object with current time
 		 Calendar cal = Calendar.getInstance();
+        System.out.println("My Name is Sulabh Jain");
 		 // add 5 minutes to the calendar object
 		 cal.add(Calendar.SECOND, 5);
 		 Intent intent = new Intent(this, AlarmReceiver.class);
